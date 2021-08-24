@@ -6,7 +6,6 @@ AddEventHandler('bk-shop:buyItem', function(item, price)
     local _src = source
     local xPlayer = ESX.GetPlayerFromId(_src) 
     if xPlayer then
-        print(price)
         if (xPlayer.getMoney() - price) >= price then 
             xPlayer.removeMoney(price) 
             xPlayer.addInventoryItem(item, 1)
