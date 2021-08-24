@@ -8,7 +8,6 @@ Citizen.CreateThread(function()
     end
 end)
 
--- Buy menu
 function menuBuy(value, price)
     local elements = {
         {label = 'Ne', value = 'no'},
@@ -32,7 +31,6 @@ function menuBuy(value, price)
     end)
 end
 
--- Shop Menu
 function openShopMenu() 
     local elements = {}
     
@@ -54,7 +52,6 @@ function openShopMenu()
     end)
 end  
 
--- Shop Blips
 local blips = {
 
      {title="Obchod", colour=5, id=446, x = -51.5, y = -1754.84, z = 38.009},
@@ -83,7 +80,6 @@ Citizen.CreateThread(function()
 	end
 end)
 
--- 3D Text 
 function DrawText3Ds(x,y,z, text)
     local onScreen, _x, _y = World3dToScreen2d(x, y, z)
 	local p = GetGameplayCamCoords()
@@ -105,7 +101,6 @@ function DrawText3Ds(x,y,z, text)
 	end
 end
 
--- Marker
 local nearestCoords
 local timeToWait = 500
 
@@ -148,7 +143,6 @@ Citizen.CreateThread(function ()
     end
 end)
 
--- Npc in store
 local koordinaten = {
     {-46.6, -1757.92, 28.40,"obchodnik",51.54,0x18CE57D0,"mp_m_shopkeep_01"},
     {24.5, -1347.29, 28.5,"obchodnik",261.34,0x18CE57D0,"mp_m_shopkeep_01"},
@@ -180,7 +174,6 @@ local koordinaten = {
     end
 end)
 
--- Animation
 function loadAnimDict(dict)
     while (not HasAnimDictLoaded(dict)) do
         RequestAnimDict(dict)
