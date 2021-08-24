@@ -10,7 +10,6 @@ Config.Shops = {
     {name = 'phone', label = 'Mobil', price = 60},   
 }
 
--- Shop 3D Text
 Config.Pos = {
     a = {
         Pos = vector3(-47.72, -1757.19, 29.30),
